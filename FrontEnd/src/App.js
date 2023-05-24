@@ -7,6 +7,7 @@ import ListEmployeeComponent from './components/ListEmployeeComponent';
 import CreateEmployeeComponent from './components/CreateEmployeeComponent';
 import UpdateEmployeeComponent from './components/UpdateEmployeeComponent';
 import ViewEmployeeComponent from './components/ViewEmployeeComponent';
+import HomePageComponent from './components/HomePageComponent';
 
 function App() {
   return (
@@ -16,7 +17,7 @@ function App() {
     
           <div className="container">
              <Switch>
-                <Route path = "/" exact component={ListEmployeeComponent}></Route>
+                <Route path = "/" exact component={HomePageComponent}></Route>
                 <Route path = "/employees" component={ListEmployeeComponent}></Route>
                 <Route path = "/add-employee" component={CreateEmployeeComponent}></Route>
                 <Route path = "/update-employee/:id" component={UpdateEmployeeComponent}></Route>
