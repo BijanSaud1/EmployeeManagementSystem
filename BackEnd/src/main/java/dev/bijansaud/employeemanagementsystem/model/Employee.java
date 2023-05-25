@@ -50,6 +50,15 @@ public class Employee {
         this.firstName = firstName;
         this.lastName = lastName;
         this.emailId = email;
+        this.phoneNo = phoneNo;
+    }
+
+    public String getPhoneNo() {
+        return phoneNo;
+    }
+
+    public void setPhoneNo(String phoneNo) {
+        this.phoneNo = phoneNo;
     }
 
     public long getId() {

@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Navbar, Stack, Nav, NavDropdown} from 'react-bootstrap'
+import { Navbar, Nav, Container} from 'react-bootstrap'
 
 export default class HeaderComponent extends Component {
     constructor(props){
@@ -16,8 +16,8 @@ export default class HeaderComponent extends Component {
       <div>
         <div>
             <header>
-              <Navbar className = 'navbar navbar-expand-md bg-light' >
-                <container>
+            <Navbar className = 'navbar navbar-expand-md bg-light' >
+                <Container>
                  
                   
                   <Navbar.Toggle aria-controls="basic-navbar-nav"/>
@@ -27,21 +27,9 @@ export default class HeaderComponent extends Component {
                     <Nav.Link href="http://localhost:3000/">Home</Nav.Link>
                     <Nav.Link href = "http://localhost:3000/employees">Employees</Nav.Link>
                   </Nav>
-                  <NavDropdown title="Login" id="basic-nav-dropdowwn">
-                  <NavDropdown.Item href ="#home">Sign In</NavDropdown.Item>
-                  <NavDropdown.Item href ="#home">Sign Up</NavDropdown.Item>
-                  
-                 </NavDropdown>
-                  
-                </container>
-                <div>
-                
-               
-                
-                 
-                </div>
+                  <Nav.Link href = "http://localhost:3000/">Login</Nav.Link>
+                </Container>
               </Navbar>
-                
             </header>
         </div>
       </div>
