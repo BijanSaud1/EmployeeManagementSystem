@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import EmployeeService from '../service/EmployeeService';
-
+import { Card } from 'react-bootstrap'
 
 class CreateEmployeeComponent extends Component {
     constructor(props){
@@ -45,6 +45,9 @@ class CreateEmployeeComponent extends Component {
 
   render() {
     return (
+        <Card>
+
+        
       <div>
         <div className="container">
             <div className="row">
@@ -67,14 +70,24 @@ class CreateEmployeeComponent extends Component {
                                 <input placeholder='Email Address' name='emailId' className='form-center'
                                 value={this.state.emailId} onChange={this.changeEmailHandler}/>
                             </div>
+                            <div className="form-check">
+                                <input type="checkbox" className='form-check-input'/>
+                                <label className='form-check-label'>Check Me</label>
+                                
+
+                            </div>
+                            <div className="mx-auto">
                             <button className='btn btn-success' onClick={this.saveEmployee}>Save</button>
                             <button className='btn btn-danger' onClick={this.cancel.bind(this)} style={{marginLeft: "10px"}}>Cancel</button>
+                            </div>
+                            
                         </form>
                     </div>
                 </div>
             </div>
         </div>
       </div>
+      </Card>
     )
   }
 }
